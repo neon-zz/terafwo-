@@ -38,10 +38,10 @@ function createPlayerInputs(){
 
             TR
 
-            <input
-                type="number"
-                id="tr${i}"
-                value="0">
+<input
+    type="number"
+    id="tr${i}"
+    placeholder="0">
 
             <br><br>
 
