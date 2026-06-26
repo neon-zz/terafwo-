@@ -18,65 +18,70 @@ function createPlayerInputs(){
         let i = 0;
         i < count;
         i++
-    ){
+            ){
 
-        area.innerHTML += `
+area.innerHTML += `
 
-        <div class="panel">
+<div class="panel">
 
-            <h3>
-                プレイヤー${i+1}
-            </h3>
+    <h3>
+        プレイヤー${i+1}
+    </h3>
 
-            名前
+    名前
 
-            <input
-                id="name${i}"
-                placeholder="名前">
+    <input
+        id="name${i}"
+        placeholder="名前">
 
-            <br><br>
+    <br><br>
 
-            TR
+    TR
 
-<input
-    type="number"
-    id="tr${i}"
-    placeholder="0">
+    <input
+        type="number"
+        id="tr${i}"
+        placeholder="0">
 
-            <br><br>
+    <br><br>
 
-TR
-<input
-    type="number"
-    id="tr${i}"
-    placeholder="0">
+    称号
 
-称号
-<input
-    type="number"
-    id="title${i}"
-    placeholder="0">
+    <input
+        type="number"
+        id="title${i}"
+        placeholder="0">
 
-褒賞
-<input
-    type="number"
-    id="award${i}"
-    placeholder="0">
+    <br><br>
 
-ゲーム盤
-<input
-    type="number"
-    id="board${i}"
-    placeholder="0">
+    褒賞
 
-カード
-<input
-    type="number"
-    id="card${i}"
-    placeholder="0">
-        </div>
+    <input
+        type="number"
+        id="award${i}"
+        placeholder="0">
 
-        `;
+    <br><br>
+
+    ゲーム盤
+
+    <input
+        type="number"
+        id="board${i}"
+        placeholder="0">
+
+    <br><br>
+
+    カード
+
+    <input
+        type="number"
+        id="card${i}"
+        placeholder="0">
+
+</div>
+
+`;
     }
 }
 
