@@ -45,40 +45,35 @@ function createPlayerInputs(){
 
             <br><br>
 
-            称号
+TR
+<input
+    type="number"
+    id="tr${i}"
+    placeholder="0">
 
-            <input
-                type="number"
-                id="title${i}"
-                value="0">
+称号
+<input
+    type="number"
+    id="title${i}"
+    placeholder="0">
 
-            <br><br>
+褒賞
+<input
+    type="number"
+    id="award${i}"
+    placeholder="0">
 
-            褒賞
+ゲーム盤
+<input
+    type="number"
+    id="board${i}"
+    placeholder="0">
 
-            <input
-                type="number"
-                id="award${i}"
-                value="0">
-
-            <br><br>
-
-            ゲーム盤
-
-            <input
-                type="number"
-                id="board${i}"
-                value="0">
-
-            <br><br>
-
-            カード
-
-            <input
-                type="number"
-                id="card${i}"
-                value="0">
-
+カード
+<input
+    type="number"
+    id="card${i}"
+    placeholder="0">
         </div>
 
         `;
@@ -111,40 +106,40 @@ function calculateScores(){
 
             `プレイヤー${i+1}`;
 
-        const tr =
-            Number(
-                document.getElementById(
-                    `tr${i}`
-                ).value
-            );
+const tr =
+    Number(
+        document.getElementById(
+            `tr${i}`
+        ).value
+    ) || 0;
 
         const title =
             Number(
                 document.getElementById(
                     `title${i}`
                 ).value
-            );
+            ) || 0;
 
         const award =
             Number(
                 document.getElementById(
                     `award${i}`
                 ).value
-            );
+            ) || 0;
 
         const board =
             Number(
                 document.getElementById(
                     `board${i}`
                 ).value
-            );
+            ) || 0;
 
         const card =
             Number(
                 document.getElementById(
                     `card${i}`
                 ).value
-            );
+            ) || 0;
 
         scores.push({
 
