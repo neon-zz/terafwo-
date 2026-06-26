@@ -30,6 +30,8 @@ area.innerHTML += `
 
     名前
 
+    <br>
+
     <input
         id="name${i}"
         placeholder="名前">
@@ -88,9 +90,8 @@ area.innerHTML += `
         type="number"
         id="card${i}"
         placeholder="0">
-
-</div>
-`;
+        </div>
+        `;
     }
 }
 
