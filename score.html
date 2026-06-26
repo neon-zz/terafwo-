@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        テラフォ得点計算
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<h1>
+    テラフォ最終得点計算
+</h1>
+
+<div class="panel">
+
+    <label>
+        プレイヤー人数
+    </label>
+
+    <select
+        id="playerCount"
+        onchange="createPlayerInputs()">
+
+        <option value="1">1人</option>
+        <option value="2">2人</option>
+        <option value="3">3人</option>
+        <option value="4">4人</option>
+        <option value="5">5人</option>
+
+    </select>
+
+    <div id="playerInputs"></div>
+
+    <br>
+
+    <button onclick="calculateScores()">
+        順位計算
+    </button>
+
+</div>
+
+<div
+    id="results"
+    class="panel">
+
+</div>
+
+</body>
+
+<script src="score.js"></script>
+
+</html>
