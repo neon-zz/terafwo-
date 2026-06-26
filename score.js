@@ -38,6 +38,8 @@ area.innerHTML += `
 
     TR
 
+    <br>
+
     <input
         type="number"
         id="tr${i}"
@@ -46,6 +48,8 @@ area.innerHTML += `
     <br><br>
 
     称号
+
+    <br>
 
     <input
         type="number"
@@ -56,6 +60,8 @@ area.innerHTML += `
 
     褒賞
 
+    <br>
+
     <input
         type="number"
         id="award${i}"
@@ -64,6 +70,8 @@ area.innerHTML += `
     <br><br>
 
     ゲーム盤
+
+    <br>
 
     <input
         type="number"
@@ -74,13 +82,14 @@ area.innerHTML += `
 
     カード
 
+    <br>
+
     <input
         type="number"
         id="card${i}"
         placeholder="0">
 
 </div>
-
 `;
     }
 }
